@@ -1,7 +1,7 @@
 import "dotenv/config";
 import express from "express";
 import cors from "cors";
-import { handleDemo } from "./routes/demo";
+//import { handleDemo } from "./routes/demo";
 import bodyParser from "body-parser";
 
 export function createServer() {
@@ -19,7 +19,7 @@ export function createServer() {
     res.json({ message: ping });
   });
 
-  app.get("/api/demo", handleDemo);
+  //app.get("/api/demo", handleDemo);
 
   // --- 🧠 Chatbot route ---
   app.post("/api/chat", async (req, res) => {
